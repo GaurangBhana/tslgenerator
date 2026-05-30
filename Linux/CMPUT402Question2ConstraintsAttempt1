@@ -1,0 +1,11 @@
+length:
+    0 characters. [single]
+    1-9 characters. [property InvalidLength]
+    10+ characters. [property ValidLength]
+
+content:
+    Less than two uppercase letters, 1 or more numbers, 1 or more special characters. [if ValidLength]
+    No numbers, 2 or more uppercase letters, 1 or more special characters. [if ValidLength]
+    No special symbol, 2 or more uppercase letters, 1 or more numbers. [if ValidLength]
+    2 or more uppercase letters, 1 or more numbers, 1 or more special characters. [if ValidLength]
+    2 or more uppercase letters, 1 or more numbers, 1 or more special characters. [if InvalidLength]
