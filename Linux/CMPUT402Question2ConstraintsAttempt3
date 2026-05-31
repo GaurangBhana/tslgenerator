@@ -1,0 +1,16 @@
+Length:
+    0 characters. [single]
+    1-9 characters. [property InvalidLength]
+    10+ characters. [property ValidLength]
+
+UppercaseContent:
+    Less than two uppercase. [if ValidLength] [property MissingUppercase]
+    2 or more uppercase.
+
+SpecialContent:
+    No special. [if ValidLength] [property MissingSpecial]
+    At least one special.
+
+NumericContent:
+    No numbers. [if ValidLength] [property MissingNumber]
+    At least one number. [if !MissingUppercase and !MissingSpecial and !MissingNumber] [else] [single]
