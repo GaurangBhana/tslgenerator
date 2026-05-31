@@ -1,16 +1,16 @@
 Length:
     0 characters. [single]
-    1-9 characters. [property InvalidLength]
-    10+ characters. [property ValidLength]
+    1-9 characters. [property invalidLength]
+    10+ characters. [property validLength]
 
 UppercaseContent:
-    Less than two uppercase. [if ValidLength] [property MissingUppercase]
-    2 or more uppercase. [property UppercasePassed]
+    Less than two uppercase. [if validLength] [property missingUppercase]
+    2 or more uppercase. [property uppercasePassed]
 
 SpecialContent:
-    No special. [if ValidLength && UppercasePassed && !InvalidLength]
-    At least one special. [property SpecialPassed]
+    No special. [if validLength && uppercasePassed] [property missingSpecial]
+    At least one special. [property specialPassed]
 
 NumericContent:
-    No numbers. [if ValidLength && UppercasePassed && SpecialPassed && !InvalidLength]
-    At least one number. [if !MissingUppercase] [else] [if UppercasePassed && SpecialPassed && !InvalidLength]
+    No numbers. [if validLength && uppercasePassed && specialPassed]
+    At least one number. [if !missingUppercase && !missingSpecial && !missingNumber]
