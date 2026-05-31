@@ -13,4 +13,4 @@ SpecialContent:
 
 NumericContent:
     No numbers. [if validLength && uppercasePassed && specialPassed]
-    At least one number. [if !missingUppercase && !missingSpecial && !missingNumber] [else] [single]
+    At least one number. [if !missingUppercase && !missingSpecial && !missingNumber]
