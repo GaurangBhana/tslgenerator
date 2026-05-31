@@ -5,12 +5,12 @@ Length:
 
 UppercaseContent:
     Less than two uppercase. [if ValidLength] [property MissingUppercase]
-    2 or more uppercase.
+    2 or more uppercase. [property UppercasePassed]
 
 SpecialContent:
-    No special. [if ValidLength] [property MissingSpecial]
-    At least one special.
+    No special. [if ValidLength && UppercasePassed && !InvalidLength]
+    At least one special. [property SpecialPassed]
 
 NumericContent:
-    No numbers. [if ValidLength] [property MissingNumber]
-    At least one number. [if !MissingUppercase and !MissingSpecial and !MissingNumber] [else] [single]
+    No numbers. [if ValidLength && UppercasePassed && SpecialPassed && !InvalidLength]
+    At least one number. [if !MissingUppercase] [else] [if UppercasePassed && SpecialPassed && !InvalidLength]
