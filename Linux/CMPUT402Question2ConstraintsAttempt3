@@ -4,11 +4,11 @@ Length:
     10+ characters. [property validLength]
 
 UppercaseContent:
-    Less than two uppercase. [if validLength] [property missingUppercase]
+    Less than two uppercase. [if validLength]
     2 or more uppercase. [property uppercasePassed]
 
 SpecialContent:
-    No special. [if validLength && uppercasePassed] [property missingSpecial]
+    No special. [if validLength && uppercasePassed]
     At least one special. [property specialPassed]
 
 NumericContent:
