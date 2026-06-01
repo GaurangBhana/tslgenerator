@@ -10,18 +10,18 @@ Test Case 2  		(Key = 2.2.2.2.)
    NumericContent   :  At least one number
 
 
-Test Case 3  		(Key = 3.1.2.0.)
+Test Case 3  		(Key = 3.1.2.2.)
    Length           :  10+ characters
    UppercaseContent :  Less than two uppercase
    SpecialContent   :  At least one special
-   NumericContent   :  <n/a>
+   NumericContent   :  At least one number
 
 
-Test Case 4  		(Key = 3.2.1.0.)
+Test Case 4  		(Key = 3.2.1.2.)
    Length           :  10+ characters
    UppercaseContent :  2 or more uppercase
    SpecialContent   :  No special
-   NumericContent   :  <n/a>
+   NumericContent   :  At least one number
 
 
 Test Case 5  		(Key = 3.2.2.1.)
@@ -29,4 +29,11 @@ Test Case 5  		(Key = 3.2.2.1.)
    UppercaseContent :  2 or more uppercase
    SpecialContent   :  At least one special
    NumericContent   :  No numbers
+
+
+Test Case 6  		(Key = 3.2.2.2.)
+   Length           :  10+ characters
+   UppercaseContent :  2 or more uppercase
+   SpecialContent   :  At least one special
+   NumericContent   :  At least one number
 
